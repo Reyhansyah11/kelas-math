@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Web</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" class="js-color-style" href="css/colors/color-4.css">
+    <link rel="stylesheet" class="js-glass-style" href="css/glass.css" disabled>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- page loader start-->
+    <div class="page-loader js-page-loader">
+        <div></div>
+    </div>
+    <!-- page loader end-->
+
+    <!--main wrapper start-->
+    <div class="main-wrapper">
+
+        <!--header start-->
+        <header class="header">
+            <div class="container">
+                <div class="header-main d-flex justify-content-between align-items-center">
+                    <div class="header-logo">
+                        <a href="#"><span>Math.</span>Education</a>
+                    </div>
+                    <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+                        <span></span>
+                    </button>
+                    <div class="header-backdrop js-header-backdrop"></div>
+                    <nav class="header-menu js-header-menu">
+                        <button type="button" class="header-close-btn js-header-menu-toggler">
+                            <i class='bx bx-x bx-flip-horizontal bx-tada'></i>
+                        </button>
+                        <ul class="manu">
+                            <li class="manu-item">
+                                <a href="index.html">Home</a>
+                                <li class="manu-item">
+                                    <a href="instructor.html">Instructor</a>
+                                </li>
+                            </li>
+                            <li class="manu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Courses
+                                    <i class='bx bx-chevron-down bx-tada'></i>
+                                </a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item">
+                                        <a href="courses.html">course</a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="courses-details.html">Course Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="manu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Pages <i
+                                    class='bx bx-chevron-down bcvx-tada'></i></a>
+                                    <ul class="sub-menu js-sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="log-in.html">Log In</a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="sign-up.html">Sign Up</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="manu-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--benner section start-->
+        <section class="benner-section d-flex align-items-center position-relative">
+            <!--- bubble animation start -->
+            <div class="bubble-animation">
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+            </div>
+            <!--- bubble animation end -->
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-delay="100" data-aos-duration="2000">
+                        <div class="benner-text">
+                            <h2 class="mb-3">
+                                An investment in knowledge pays the best interest
+                            </h2>
+                            <h1 class="mb-3 text-capitalize">
+                                Best Online Platform
+                            </h1>
+                            <p>
+                                Explore our top courses, enhance skills, and achieve success through immersive and
+                                impactful learning experiences.
+                            </p>
+                            <a href="sign-up.html" class="btn btn-theme">Join Free</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-first order-md-last mb-5 mb-md-0" data-aos="fade-down"
+                        data-aos-delay="100" data-aos-duration="2000">
+                        <div class="banner-img">
+                            <div class="circular-img">
+                                <div class="circular-img-inner">
+                                    <div class="circular-img-circle"></div>
+                                    <img src="img/1-removebg-preview.png" width="360px" alt="banner img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--benner section end-->
+
+        <!--fun facts section start-->
+        <section class="fun-facts-section position-relative">
+            <div class="container">
+                <div class="box py-2" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="row text-center">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="fun-facts-item">
+                                <h2 class="style-1"> 800k </h2>
+                                <p>students we've</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="fun-facts-item">
+                                <h2 class="style-2">500+</h2>
+                                <p>courses</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="fun-facts-item">
+                                <h2 class="style-3">50+</h2>
+                                <p>countries</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="fun-facts-item">
+                                <h2 class="style-4">100+</h2>
+                                <p>skilled instructors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--fun facts section end-->
+
+        <br><br>
+
+        <!-- courses section start -->
+        <section class="courses section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="section-title text-center">
+                            <h2 class="title">Courses</h2>
+                            <p class="sub-title">find the right course for you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box-container mb-5">
+
+                        <!--course content start-->
+                        <div class="box" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="image">
+                                <a href="courses-details.html">
+                                    <img src="img/courses/3.jpg" alt="">
+                                </a>
+                                <h3>Beginner</h3>
+                            </div>
+                            <div class="content">
+                                <p>updated 25/9/2021</p>
+                                <a href="courses-details.html">
+                                    <h3 class="title">Arithmetic</h3>
+                                </a>
+                                <h4>$49.99</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(785)</span>
+                                </div>
+                                <div class="icons">
+                                    <span><i class="far fa-bookmark"></i> 15 lessons</span>
+                                    <span><i class="far fa-clock"></i> 8h 2m 9s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--course content end-->
+
+                        <!--course content start-->
+                        <div class="box" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="image">
+                                <a href="courses-details.html">
+                                    <img src="img/courses/2.jpg" alt="">
+                                </a>
+                                <h3>Beginner</h3>
+                            </div>
+                            <div class="content">
+                                <p>updated 25/9/2021</p>
+                                <a href="courses-details.html">
+                                    <h3 class="title">Math</h3>
+                                </a>
+                                <h4>$49.99</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(785)</span>
+                                </div>
+                                <div class="icons">
+                                    <span><i class="far fa-bookmark"></i> 15 lessons</span>
+                                    <span><i class="far fa-clock"></i> 8h 2m 9s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--course content end-->
+
+                        <!--course content start-->
+                        <div class="box" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="image">
+                                <a href="courses-details.html">
+                                    <img src="img/courses/1.jpg" alt="">
+                                </a>
+                                <h3>Expert</h3>
+                            </div>
+                            <div class="content">
+                                <p>updated 25/9/2021</p>
+                                <a href="courses-details.html">
+                                    <h3 class="title">Category Theory</h3>
+                                </a>
+                                <h4>$49.99</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(785)</span>
+                                </div>
+                                <div class="icons">
+                                    <span><i class="far fa-bookmark"></i> 15 lessons</span>
+                                    <span><i class="far fa-clock"></i> 8h 2m 9s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--course content end-->
+
+                        <!--course content start-->
+                        <div class="box" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="image">
+                                <a href="courses-details.html">
+                                    <img src="img/math-trigonometry.jpg" alt="">
+                                </a>
+                                <h3>Intermediate</h3>
+                            </div>
+                            <div class="content">
+                                <p>updated 25/9/2021</p>
+                                <a href="courses-details.html">
+                                    <h3 class="title">Differential Geometry</h3>
+                                </a>
+                                <h4>$49.99</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(785)</span>
+                                </div>
+                                <div class="icons">
+                                    <span><i class="far fa-bookmark"></i> 15 lessons</span>
+                                    <span><i class="far fa-clock"></i> 8h 2m 9s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--course content end-->
+
+                        <!--course content start-->
+                        <div class="box" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="image">
+                                <a href="courses-details.html">
+                                    <img src="img/courses/4.jpg" alt="">
+                                </a>
+                                <h3>Expert</h3>
+                            </div>
+                            <div class="content">
+                                <p>updated 25/9/2021</p>
+                                <a href="courses-details.html">
+                                    <h3 class="title">Functional Analysis</h3>
+                                </a>
+                                <h4>$49.99</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(785)</span>
+                                </div>
+                                <div class="icons">
+                                    <span><i class="far fa-bookmark"></i> 15 lessons</span>
+                                    <span><i class="far fa-clock"></i> 8h 2m 9s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--course content end-->
+
+                        <!--course content start-->
+                        <div class="box" data-aos="fade-down" data-aos-duration="2000">
+                            <div class="image">
+                                <a href="courses-details.html">
+                                    <img src="img/courses/5.jpg" alt="">
+                                </a>
+                                <h3>Beginner</h3>
+                            </div>
+                            <div class="content">
+                                <p>updated 25/9/2021</p>
+                                <a href="courses-details.html">
+                                    <h3 class="title">General</h3>
+                                </a>
+                                <h4>$49.99</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(785)</span>
+                                </div>
+                                <div class="icons">
+                                    <span><i class="far fa-bookmark"></i> 15 lessons</span>
+                                    <span><i class="far fa-clock"></i> 8h 2m 9s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--course content end-->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <a href="courses.html" class="btn btn-theme mt-lg-5">view all courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- courses section end -->
+
+        <!--testimonials section start-->
+        <section class="testimonials-section section-pading position-relative">
+            <div class="decoration-circles d-none d-lg-block">
+                <div class="decoration-circles-item"></div>
+                <div class="decoration-circles-item"></div>
+                <div class="decoration-circles-item"></div>
+                <div class="decoration-circles-item"></div>
+            </div>
+            <div class="decoration-imgs d-none d-lg-block">
+                <img src="img/testimonial/1.png" alt="decoration img" class="decoration-imgs-item">
+                <img src="img/testimonial/2.png" alt="decoration img" class="decoration-imgs-item">
+                <img src="img/testimonial/3.png" alt="decoration img" class="decoration-imgs-item">
+                <img src="img/testimonial/4.jpg" alt="decoration img" class="decoration-imgs-item">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 ">
+                        <div class="section-title text-center">
+                            <h2 class="title">students feedback</h2>
+                            <p class="sub-title">what our students say</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="img-box rounded-circle position-relative">
+                            <img src="img/testimonial/1.png"
+                                class="w-100 js-testimonial-img rounded-circle testimonials-img" alt="testimonial img">
+                        </div>
+                        <div id="carouselExampleAutoplaying" class="carousel slide text-center" data-bs-ride="carousel">
+                            <div class="carousel-inner mb-4">
+                                <div class="carousel-item active" data-js-testimonial-img="img/testimonial/1.png">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">
+                                            I am truly impressed with the course content. It's well-structured and easy
+                                            to follow. A game-changer for my career!
+                                        </p>
+                                        <h3>
+                                            john
+                                        </h3>
+                                        <p class="text-2">senior students Math</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="img/testimonial/2.png">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">
+                                            I've taken various online courses, but this one stands out. Engaging
+                                            materials and excellent support. Thank you!
+                                        </p>
+                                        <h3>
+                                            joe
+                                        </h3>
+                                        <p class="text-2">students Math</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="img/testimonial/3.png">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">
+                                            The instructors are brilliant! Their expertise and passion made learning
+                                            enjoyable. Highly recommend these courses.
+                                        </p>
+                                        <h3>
+                                            Anddy
+                                        </h3>
+                                        <p class="text-2">junior students Math</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="img/testimonial/4.jpg">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">
+                                            Enrolling in these courses was a great decision. Practical lessons and
+                                            real-world applications exceeded my expectations.
+                                        </p>
+                                        <h3>
+                                            Annora
+                                        </h3>
+                                        <p class="text-2">students Math</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <i class="fa-solid fa-arrow-left"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--testimonials section end-->
+
+        <br>
+
+        <!---become a instructor section start-->
+        <section class="bai-section section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="box" data-aos="flip-left" data-aos-duration="2000">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 order-first mb-5 mb-md-0">
+                                    <div class="circular-img">
+                                        <div class="circular-img-inner">
+                                            <div class="circular-img-circle"></div>
+                                            <img src="img/2150710020-removebg-preview.png" width="280px" alt=" bai img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="section-title">
+                                        <h2 class="title">become a instructor</h2>
+                                        <p class="sub-title">become a instructor</p>
+                                    </div>
+                                    <a href="instructor.html" class="btn btn-theme">find an instructor
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---become a instructor section end-->
+
+        <br>
+        <br>
+
+        <div class="container py-4 py-md-6">
+            <div class="row mb-6">
+                <div class="lc-block">
+                    <div editable="rich">
+                        <p>OUR CLIENTS</p>
+                    </div>
+                </div>
+                <div class="lc-block">
+                    <div editable="rich">
+                        <h3 class="display-6">Trusted by over 300+ clients
+                        </h3>
+                    </div>
+                </div>
+                <div class="lc-block">
+                    <div editable="rich">
+                        <p class="lead">We bring solutions to make life easier for our customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-xl-5 g-4 g-xl-5 justify-content-center">
+                <div class="col" data-aos-duration="2000" data-aos-delay="200">
+                    <div class="card shadow h-100 align-items-center">
+                        <div class="card-body align-items-center justify-content-center d-flex py-6">
+                            <img class="col-10" src="https://cdn.livecanvas.com/media/logos/1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos-duration="2000" data-aos-delay="200">
+                    <div class="card shadow h-100 align-items-center">
+                        <div class="card-body align-items-center justify-content-center d-flex py-6">
+                            <img class="col-10" src="https://cdn.livecanvas.com/media/logos/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos-duration="2000">
+                    <div class="card shadow h-100 align-items-center">
+                        <div class="card-body align-items-center justify-content-center d-flex py-6">
+                            <img class="col-10" src="https://cdn.livecanvas.com/media/logos/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos-duration="2000" data-aos-delay="200">
+                    <div class="card shadow h-100 align-items-center">
+                        <div class="card-body align-items-center justify-content-center d-flex py-6">
+                            <img class="col-10" src="https://cdn.livecanvas.com/media/logos/4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos-duration="2000" data-aos-delay="200">
+                    <div class="card shadow h-100 align-items-center">
+                        <div class="card-body align-items-center justify-content-center d-flex py-6">
+                            <img class="col-10" src="https://cdn.livecanvas.com/media/logos/5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3 class="footer-logo"><span>Math.</span>Education</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">about</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">what we offer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">certificates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>learning</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">get the app</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>more</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">affiliates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">become a course creater</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">training webinars</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">free personality test</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">help and support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>get in touch</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-square-facebook sosial-icon"></i>
+                                            facebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-square-instagram sosial-icon"></i>
+                                            instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-square-x-twitter sosial-icon"></i>
+                                            twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-youtube sosial-icon"></i> youtube</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-linkedin sosial-icon"></i> linkedin</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="m-0 py-4 text-center">Copyright &copy; 2023 The webReyhan</p>
+                </div>
+            </div>
+        </footer>
+        <!--footer-->
+
+    </div>
+    <!--main wrapper end-->
+
+
+    <!--style switcher start-->
+    <div class="style-switcher js-style-switcher">
+        <div class="style-switcher-toggler js-style-switcher-toggler">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3> Style Switcher</h3>
+        <div class="style-switcher-item">
+            <p class="mb-2">Theme Colors</p>
+            <!--theme colors-->
+            <div class="theme-colors js-theme-colors">
+                <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+                <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+                <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+                <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+                <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+            </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input class="form-check-input js-dark-mode" type="checkbox" role="switch" id="dark-mode">
+                <label class="form-check-label" for="dark-mode">Dark Mode</label>
+            </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input class="form-check-input js-glass-effect" type="checkbox" role="switch" id="glass-effect">
+                <label class="form-check-label" for="glass-effect">Glass Effect</label>
+            </div>
+        </div>
+    </div>
+    <!--style switcher end-->
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+
+</body>
+
+</html>

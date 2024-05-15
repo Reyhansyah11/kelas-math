@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" class="js-color-style" href="css/colors/color-1.css">
+    <link rel="stylesheet" class="js-glass-style" href="css/glass.css" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <!-- page loader start-->
+    <div class="page-loader js-page-loader">
+        <div></div>
+    </div>
+    <!-- page loader end-->
+
+    <!--main wrapper start-->
+    <div class="main-wrapper">
+
+        <!--header start-->
+        <header class="header">
+            <div class="container">
+                <div class="header-main d-flex justify-content-between align-items-center">
+                    <div class="header-logo">
+                        <a href="#"><span>Math.</span>Education</a>
+                    </div>
+                    <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+                        <span></span>
+                    </button>
+                    <div class="header-backdrop js-header-backdrop"></div>
+                    <nav class="header-menu js-header-menu">
+                        <button type="button" class="header-close-btn js-header-menu-toggler">
+                            <i class='bx bx-x bx-flip-horizontal bx-tada'></i>
+                        </button>
+                        <ul class="manu">
+                            <li class="manu-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="manu-item">
+                                <a href="instructor.html">Instructor</a>
+                            </li>
+                            <li class="manu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Courses <i
+                                        class='bx bx-chevron-down bx-tada'></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item">
+                                        <a href="courses.html">Course</a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="courses-details.html">Course Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="manu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Pages <i
+                                        class='bx bx-chevron-down bx-tada'></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item">
+                                        <a href="log-in.html">Log In</a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="sign-up.html">Sign Up</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="manu-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--header end-->
+
+        <!----breadcrumb start---->
+        <div class="breadcrumb-nav">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            courses
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!----breadcrumb end---->
+
+        <!--courses section start-->
+        <section class="courses-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="section-title text-center mb-4">
+                            <h2 class="title">Our Courses</h2>
+                            <p class="sub-title">find the right course for you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <nav>
+                            <div class="nav nav-tabs border-0 justify-content-center mb-4" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="beginner-math-tab" data-bs-toggle="tab"
+                                    data-bs-target="#beginner-math" type="button" role="tab"
+                                    aria-controls="beginner-math" aria-selected="true">Beginner Math</button>
+                                <button class="nav-link" id="Intermediate-Math-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Intermediate-Math" type="button" role="tab"
+                                    aria-controls="Intermediate-Math" aria-selected="false">Intermediate Math</button>
+                                <button class="nav-link" id="Expert-Math-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Expert-Math" type="button" role="tab" aria-controls="Expert-Math"
+                                    aria-selected="false">Expert Math</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="beginner-math" role="tabpanel"
+                                aria-labelledby="beginner-math-tab" tabindex="0">
+                                <div class="row justify-content-center">
+                                    <!--courses item start-->
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="courses-item">
+                                            <a href="courses-details.html" class="link">
+                                                <div class="courses-item-inner">
+                                                    <div class="img-box">
+                                                        <img src="img/courses/2.jpg" alt="courses img">
+                                                    </div>
+                                                    <h3 class="title">General</h3>
+                                                    <div class="instructor">
+                                                        <img src="img/836-removebg-preview.png" alt="instructor img">
+                                                        <span class="instructor-name">John doe</span>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="average-rating">(4.5)</span>
+                                                        <span class="average-stars">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span class="reviews">(230)</span>
+                                                    </div>
+                                                    <div class="price">$ 49</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--courses item end-->
+                                    <!--courses item start-->
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="courses-item">
+                                            <a href="courses-details.html" class="link">
+                                                <div class="courses-item-inner">
+                                                    <div class="img-box">
+                                                        <img src="img/courses/3.jpg" alt="courses img">
+                                                    </div>
+                                                    <h3 class="title">Arithmetic</h3>
+                                                    <div class="instructor">
+                                                        <img src="img/836-removebg-preview.png" alt="instructor img">
+                                                        <span class="instructor-name">Sarah</span>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="average-rating">(4.5)</span>
+                                                        <span class="average-stars">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span class="reviews">(230)</span>
+                                                    </div>
+                                                    <div class="price">$ 49</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--courses item end-->
+                                    <!--courses item start-->
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="courses-item">
+                                            <a href="courses-details.html" class="link">
+                                                <div class="courses-item-inner">
+                                                    <div class="img-box">
+                                                        <img src="img/courses/1.jpg" alt="courses img">
+                                                    </div>
+                                                    <h3 class="title">elementary school math</h3>
+                                                    <div class="instructor">
+                                                        <img src="img/836-removebg-preview.png" alt="instructor img">
+                                                        <span class="instructor-name">Joe</span>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="average-rating">(4.5)</span>
+                                                        <span class="average-stars">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span class="reviews">(230)</span>
+                                                    </div>
+                                                    <div class="price">$ 49</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--courses item end-->
+                                    <!--courses item start-->
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="courses-item">
+                                            <a href="courses-details.html" class="link">
+                                                <div class="courses-item-inner">
+                                                    <div class="img-box">
+                                                        <img src="img/courses/4.jpg" alt="courses img">
+                                                    </div>
+                                                    <h3 class="title">math</h3>
+                                                    <div class="instructor">
+                                                        <img src="img/836-removebg-preview.png" alt="instructor img">
+                                                        <span class="instructor-name">Albert</span>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="average-rating">(4.5)</span>
+                                                        <span class="average-stars">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span class="reviews">(230)</span>
+                                                    </div>
+                                                    <div class="price">$ 49</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--courses item end-->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Intermediate-Math" role="tabpanel"
+                                aria-labelledby="Intermediate-Math-tab">
+                                <div class="row justify-content-center">
+                                    <!--courses item start-->
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="courses-item">
+                                            <a href="courses-details.html" class="link">
+                                                <div class="courses-item-inner">
+                                                    <div class="img-box">
+                                                        <img src="img/courses/1.jpg" alt="courses img">
+                                                    </div>
+                                                    <h3 class="title">Linear Algebra</h3>
+                                                    <div class="instructor">
+                                                        <img src="img/836-removebg-preview.png" alt="instructor img">
+                                                        <span class="instructor-name">Joe</span>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="average-rating">(4.5)</span>
+                                                        <span class="average-stars">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span class="reviews">(230)</span>
+                                                    </div>
+                                                    <div class="price">$ 49</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--courses item end-->
+                                    <!--courses item start-->
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="courses-item">
+                                            <a href="courses-details.html" class="link">
+                                                <div class="courses-item-inner">
+                                                    <div class="img-box">
+                                                        <img src="img/math-trigonometry.jpg" alt="courses img">
+                                                    </div>
+                                                    <h3 class="title">Differential Geometry</h3>
+                                                    <div class="instructor">
+                                                        <img src="img/836-removebg-preview.png" alt="instructor img">
+                                                        <span class="instructor-name">Albert</span>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="average-rating">(4.5)</span>
+                                                        <span class="average-stars">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span class="reviews">(230)</span>
+                                                    </div>
+                                                    <div class="price">$ 49</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--courses item end-->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Expert-Math" role="tabpanel"
+                                aria-labelledby="Expert-Math-tab">
+                                <div class="row justify-content-center">
+                                    <!--courses item start-->
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="courses-item">
+                                            <a href="courses-details.html" class="link">
+                                                <div class="courses-item-inner">
+                                                    <div class="img-box">
+                                                        <img src="img/courses/4.jpg" alt="courses img">
+                                                    </div>
+                                                    <h3 class="title">Functional Analysis</h3>
+                                                    <div class="instructor">
+                                                        <img src="img/836-removebg-preview.png" alt="instructor img">
+                                                        <span class="instructor-name">Albert</span>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="average-rating">(4.5)</span>
+                                                        <span class="average-stars">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span class="reviews">(230)</span>
+                                                    </div>
+                                                    <div class="price">$ 49</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--courses item end-->
+                                    <!--courses item start-->
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="courses-item">
+                                            <a href="courses-details.html" class="link">
+                                                <div class="courses-item-inner">
+                                                    <div class="img-box">
+                                                        <img src="img/courses/1.jpg" alt="courses img">
+                                                    </div>
+                                                    <h3 class="title">Category Theory</h3>
+                                                    <div class="instructor">
+                                                        <img src="img/836-removebg-preview.png" alt="instructor img">
+                                                        <span class="instructor-name">Joe</span>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="average-rating">(4.5)</span>
+                                                        <span class="average-stars">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                        <span class="reviews">(230)</span>
+                                                    </div>
+                                                    <div class="price">$ 49</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--courses item end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-4">
+                        <!--pagination start-->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">40</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--pagination end-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--courses section end-->
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3 class="footer-logo"><span>Math.</span>Education</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">about</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">what we offer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">certificates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>learning</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">get the app</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">faq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>more</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">affiliates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">become a course creater</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">training webinars</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">free personality test</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">help and support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>get in touch</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-square-facebook sosial-icon"></i>
+                                            facebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-square-instagram sosial-icon"></i>
+                                            instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-square-x-twitter sosial-icon"></i>
+                                            twitter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-youtube sosial-icon"></i> youtube</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-linkedin sosial-icon"></i> linkedin</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="m-0 py-4 text-center">Copyright &copy; 2023 The webReyhan</p>
+                </div>
+            </div>
+        </footer>
+        <!--footer-->
+
+    </div>
+    <!--main wrapper end-->
+
+    <!--style switcher start-->
+    <div class="style-switcher js-style-switcher">
+        <div class="style-switcher-toggler js-style-switcher-toggler">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3> Style Switcher</h3>
+        <div class="style-switcher-item">
+            <p class="mb-2">Theme Colors</p>
+            <!--theme colors-->
+            <div class="theme-colors js-theme-colors">
+                <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+                <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+                <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+                <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+                <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+            </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input class="form-check-input js-dark-mode" type="checkbox" role="switch" id="dark-mode">
+                <label class="form-check-label" for="dark-mode">Dark Mode</label>
+            </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input class="form-check-input js-glass-effect" type="checkbox" role="switch" id="glass-effect">
+                <label class="form-check-label" for="glass-effect">Glass Effect</label>
+            </div>
+        </div>
+    </div>
+    <!--style switcher end-->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
